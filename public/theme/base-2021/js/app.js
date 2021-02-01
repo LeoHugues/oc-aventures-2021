@@ -13,31 +13,20 @@ document.addEventListener('scroll', function() {
 scrollpos = window.scrollY;
 
   if(scrollpos > 10){
-    header.classList.add("bg-white");
-  header.classList.remove("text-white");
-  header.classList.add("text-black");
-  //Use to switch toggleColour colours
-    for (var i = 0; i < toToggle.length; i++) {
-     toToggle[i].classList.add("text-black");
-     toToggle[i].classList.remove("text-white");
-  }
+    header.classList.add("bg-sombre");
   header.classList.add("shadow");
 
   }
   else {
-  header.classList.remove("bg-white");
-  header.classList.remove("text-black");
-  header.classList.add("text-white");
+  header.classList.remove("bg-sombre");
 
   //Use to switch toggleColour colours
     for (var i = 0; i < toToggle.length; i++) {
-     toToggle[i].classList.add("text-white");
+     toToggle[i].classList.add("text-sable");
    toToggle[i].classList.remove("text-gray-800");
   }
   
   header.classList.remove("shadow");
-
-  
   }
 
 });

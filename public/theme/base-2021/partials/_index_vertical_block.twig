@@ -6,6 +6,11 @@
 
 <!-- Vertical block -->
 <section class="bg-sable border-b py-6">
+    <div class="flex flex-col w-full justify-center items-center text-center transform -translate-y-8">
+      <div class="w-3/5 py-12 relative bg-contain bg-center bg-no-repeat" style="background-image: url('{{ asset('img/panneau.svg')}}')">
+        <h1 class="font-bold pt-4 uppercase tracking-tight align-baseline text-sable text-4xl w-full">Montpellier Nord</h1>
+      </div>
+	</div>
 	<div class="container max-w-5xl mx-auto m-8">
 		{% include 'partials/_block_header.twig' %}
 
@@ -14,7 +19,7 @@
 			{% if loop.index is odd %}
 				<div class="w-full sm:w-1/2 p-6">
 					<img class="w-full object-cover object-center"
-						 src="{{ record|thumbnail(500, 300, fit="crop") }}" {#alt="{{ record|image.title }}#}">
+						 src="{{ record|thumbnail(500, 300, fit="crop") }}" {#alt="{{ record|image.title }}#}>
 				</div>
 			{% endif %}
 

@@ -2,9 +2,20 @@
 
 {% block main %}
 
-  {% include 'partials/_index_hero.twig' with { content: 'blocks/hero-section' } %}
+{% setcontent homepage = 'homepage' %}
+<!--Hero-->
+<section class="pt-24 relative bg-center bg-cover bg-no-repeat" style="background-image: linear-gradient(rgba(0, 0, 0, 0.408), rgba(0, 0, 0, 0.408)), url({{homepage.heroimage.url}})">
+	<div class="container pb-24 mb-20 px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+		<div class="flex flex-col text-center w-full">
+			<img style="border-radius: 1.5rem;" src="{{ homepage.image|thumbnail(600, 400, fit="crop") }}">
+		</div>
+		<div class="flex flex-col justify-center items-start text-center">
+			<p class="leading-normal text-2xl mb-8 text-white">{{ homepage.introduction|excerpt }}</p>
+		</div>
+	</div>
+    {% include 'partials/_index_divider_top.twig' %}
+</section>
 
-  {% include 'partials/_index_divider_top.twig' %}
 
   {% include 'partials/_index_vertical_block.twig' with { content: 'blocks/introduction', contenttype: 'pages' } %}
 

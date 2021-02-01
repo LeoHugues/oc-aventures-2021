@@ -1,9 +1,9 @@
 <!--Nav-->
-<div id="header" class="text-white fixed top-0 w-full z-30">
+<div id="header" class="text-sable fixed top-0 w-full z-30">
   <div x-data="{ open: false }"
     class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-4">
-    <div class="py-4 flex flex-row items-center justify-between">
-      <a href="{{ path('homepage') }}" class="text-lg font-semibold tracking-widest currentColor uppercase rounded-lg focus:outline-none focus:shadow-outline">
+    <div class="py-0 flex flex-row items-center justify-between">
+      <a href="{{ path('homepage') }}" class="font-bold text-lg md:text-2xl tracking-tight currentColor uppercase rounded-lg focus:outline-none focus:shadow-outline">
         {% include 'img/logo.svg' %}
         {{ config.get('general/sitename') }}
       </a>
