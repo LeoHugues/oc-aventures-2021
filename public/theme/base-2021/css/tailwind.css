@@ -630,6 +630,12 @@ video {
   src: local('Ralewaybold'), url(./fonts/Raleway-Bold.ttf) format('ttf');
 }
 
+@font-face {
+  font-family: 'Raleway Semibold';
+
+  src: local('Ralewaysemibold'), url(./fonts/Raleway-SemiBold.ttf) format('ttf');
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -10427,10 +10433,6 @@ video {
 
 .font-serif {
   font-family: Raleway, serif;
-}
-
-.font-bold {
-  font-family: Raleway Bold, sans-serif;
 }
 
 .font-hairline {
@@ -32681,10 +32683,6 @@ video {
     font-family: Raleway, serif;
   }
 
-  .sm\:font-bold {
-    font-family: Raleway Bold, sans-serif;
-  }
-
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -54866,10 +54864,6 @@ video {
 
   .md\:font-serif {
     font-family: Raleway, serif;
-  }
-
-  .md\:font-bold {
-    font-family: Raleway Bold, sans-serif;
   }
 
   .md\:font-hairline {
@@ -77055,10 +77049,6 @@ video {
     font-family: Raleway, serif;
   }
 
-  .lg\:font-bold {
-    font-family: Raleway Bold, sans-serif;
-  }
-
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -99240,10 +99230,6 @@ video {
 
   .xl\:font-serif {
     font-family: Raleway, serif;
-  }
-
-  .xl\:font-bold {
-    font-family: Raleway Bold, sans-serif;
   }
 
   .xl\:font-hairline {
