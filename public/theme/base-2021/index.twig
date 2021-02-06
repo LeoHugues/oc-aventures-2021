@@ -3,42 +3,114 @@
 {% block main %}
 
 {% setcontent homepage = 'homepage' %}
-<!--Hero-->
-<section class="pt-24 relative bg-center bg-cover bg-no-repeat" style="background-image: linear-gradient(rgba(0, 0, 0, 0.408), rgba(0, 0, 0, 0.408)), url({{homepage.heroimage.url}})">
-	<div class="container mb-20 px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-		<div class="flex flex-col text-center w-full">
-			<img style="border-radius: 1.5rem;" src="{{ homepage.image|thumbnail(600, 400, fit="crop") }}">
-		</div>
-		<div class="flex flex-col justify-center items-start text-center">
-			<p class="leading-normal font-semibold text-2xl mb-8 text-white">{{ homepage.introduction|excerpt }}</p>
-		</div>
-	</div>
-    {% include 'partials/_index_divider_top.twig' %}
-</section>
+<div class="bg-sable pb-12" data-scroll-container>
+  <!--Hero-->
+  <section class="pt-24 relative bg-center bg-cover bg-no-repeat" style="background-image: linear-gradient(rgba(0, 0, 0, 0.408), rgba(0, 0, 0, 0.408)), url({{homepage.heroimage.url}})" data-scroll-section>
+    <div class="container mb-20 px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <div class="flex flex-col items-center w-full">
+        <img class="w-1/3" style="border-radius: 1.5rem;" src="{{ homepage.image|thumbnail(600, 400, fit="crop") }}">
+      </div>
+      <div class="flex flex-col justify-center items-start text-center">
+        <p class="leading-normal font-semibold text-2xl mb-8 text-white">{{ homepage.introduction|excerpt }}</p>
+      </div>
+    </div>
+      {% include 'partials/_index_divider_top.twig' %}
+  </section>
+ <div  id="parallax" data-scroll-section>
+    {{ homepage.intro_content }}
+</div>
 
+  <section id="parallax_section" class="relative bg-vert-ciel full-w p-0 invisible md:visible" data-scroll-section>
+    <div class="h-full w-full">
+      <div class="absolute w-full top-0 transform -translate-y-4">
+        <img class="w-full" src="{{ asset('img/nuage-divider.svg')}}"/>
+      </div> 
 
-  {{ homepage.intro_content }}
+      <div class="absolute w-full bottom-0 transform -translate-y-32 xl:translate-y-0">
+        <span class="block" data-scroll data-scroll-speed="-1.8" data-scroll-target="#parallax" data-scroll-offset="0,-100%">
+          <img class="w-full" src="{{ asset('img/vallee.svg')}}"/>
+        </span>
+      </div>
 
-  {% include 'partials/_index_3_column_block_images.twig' with { contenttype: 'entries' } %}
+      <div class="c-direction-block_item absolute pt-40 xl:pt-64">
+          <span class="block" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-40%">
+            <img class="h-12 xl:h-24 transform xl:translate-y-4" src="{{ asset('img/rider.svg')}}"/>
+          </span>
+      </div>
 
-  {% if 'people' in config.get('contenttypes').keys() %}
-    {% include 'partials/_index_team.twig' with { content: 'blocks/people', contenttype: 'people' } %}
-  {% endif %}
+      <div class="absolute w-full top-0 transform -translate-y-36 lg:-translate-y-28  xl:-translate-y-5">
+        <span class="block" data-scroll data-scroll-speed="-2.7" data-scroll-target="#parallax" data-scroll-offset="0,-100%">
+          <img class="w-full md:transform -translate-y-2" src="{{ asset('img/cable-tyro.svg')}}"/>
+        </span>
+      </div>
 
-  {% if 'products' in config.get('contenttypes').keys() %}
-    {% include 'partials/_index_pricing_block.twig' with { content: 'blocks/products', contenttype: 'products' } %}
-  {% endif %}
+      <div class="absolute w-1/3 right-0 top-0 transform -translate-y-64">
+        <span class="block" data-scroll data-scroll-speed="-4" data-scroll-target="#parallax" data-scroll-offset="0,-100%">
+          <img class="w-full md:-translate-y-2" src="{{ asset('img/arbres-cote-droit.svg')}}"/>
+        </span>
+      </div>
 
-  {% if 'pages' in config.get('contenttypes').keys() %}
-    {% include 'partials/_index_3_column_block.twig' with { content: 'blocks/about', contenttype: 'pages' } %}
-  {% endif %}
+      <div class="absolute w-1/4 top-0 transform -translate-y-64">
+        <span class="block" data-scroll data-scroll-speed="-4" data-scroll-target="#parallax" data-scroll-offset="0,-100%">
+          <img src="{{ asset('img/arbres-cote-gauche.svg')}}"/>
+        </span>
+      </div>
 
-  {% include 'partials/_index_divider_bottom.twig' with { background: '#FFF' } %}
+      <div class="absolute bottom-0 w-full transform translate-y-2">
+        <img class="w-full" src="{{ asset('img/divider-argile.svg')}}"/>
+      </div>
+    </div>
+  </section>
 
-  {% include 'partials/_index_CTA.twig' with { content: 'blocks/call-to-action' } %}
+  <section class="relative bg-rouge h-screen" data-scroll-section>
+  </section>
 
-  {% include 'partials/_index_divider_top.twig' with { background: '#f8fafc' } %}
+  <section data-scroll-section>
+    {% include 'partials/_index_3_column_block_images.twig' with { contenttype: 'entries' } %}
 
-  {% include 'partials/_index_contact_with_map.twig' %}
+    {% if 'people' in config.get('contenttypes').keys() %}
+      {% include 'partials/_index_team.twig' with { content: 'blocks/people', contenttype: 'people' } %}
+    {% endif %}
+    {% if 'products' in config.get('contenttypes').keys() %}
+      {% include 'partials/_index_pricing_block.twig' with { content: 'blocks/products', contenttype: 'products' } %}
+    {% endif %}
 
+    {% if 'pages' in config.get('contenttypes').keys() %}
+      {% include 'partials/_index_3_column_block.twig' with { content: 'blocks/about', contenttype: 'pages' } %}
+    {% endif %}
+
+    {% include 'partials/_index_divider_bottom.twig' with { background: '#FFF' } %}
+
+    {% include 'partials/_index_CTA.twig' with { content: 'blocks/call-to-action' } %}
+
+    {% include 'partials/_index_divider_top.twig' with { background: '#f8fafc' } %}
+
+    {% include 'partials/_index_contact_with_map.twig' %}
+    </section>
+</div>
 {% endblock main %}
+
+  {% block script %}
+
+  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+  <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+
+
+  <script defer src="{{ asset('js/locomotive-scroll.min.js') }}"></script>
+
+  <script type="module">
+    (function () {
+        var scroll = new LocomotiveScroll({
+          el: document.querySelector('[data-scroll-container]'),
+          smooth: true,
+          multiplier: 1,
+          smartphone: {
+              smooth: true
+          },
+          tablet: {
+              smooth: true
+          }
+        });
+    })();
+  </script>
+  {% endblock %}

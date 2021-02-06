@@ -114,3 +114,11 @@ html {
 }
 
 /* Base grid for "Article" powered Fields */
+
+.c-direction-block_item {
+    transform: rotate(18.7deg);
+}
+
+#parallax_section {
+    height: calc(100vw * 0.65);
+}

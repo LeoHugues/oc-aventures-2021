@@ -7,10 +7,10 @@ module.exports = {
                 'rouge':'#87200c',
                 'sombre': '#222'
             },
+            fontFamily: {
+                sans: ['Raleway', 'sans-serif'],
+                serif: ['Raleway', 'serif'],
+            },
         },
-        fontFamily: {
-            sans: ['Raleway', 'sans-serif'],
-            serif: ['Raleway', 'serif'],
-          },
-    },
+    }
 }
