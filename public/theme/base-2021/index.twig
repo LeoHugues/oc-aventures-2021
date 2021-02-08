@@ -70,28 +70,17 @@
     {{ homepage.section_tarif }}
   </div>
 
-  <section data-scroll-section>
-    {% include 'partials/_index_3_column_block_images.twig' with { contenttype: 'entries' } %}
 
-    {% if 'people' in config.get('contenttypes').keys() %}
-      {% include 'partials/_index_team.twig' with { content: 'blocks/people', contenttype: 'people' } %}
-    {% endif %}
-    {% if 'products' in config.get('contenttypes').keys() %}
-      {% include 'partials/_index_pricing_block.twig' with { content: 'blocks/products', contenttype: 'products' } %}
-    {% endif %}
 
-    {% if 'pages' in config.get('contenttypes').keys() %}
-      {% include 'partials/_index_3_column_block.twig' with { content: 'blocks/about', contenttype: 'pages' } %}
-    {% endif %}
+  <div class="bg-vert-ciel" data-scroll-section>
 
-    {% include 'partials/_index_divider_bottom.twig' with { background: '#FFF' } %}
+    {{ homepage.section_contact}}
 
-    {% include 'partials/_index_CTA.twig' with { content: 'blocks/call-to-action' } %}
+  </div>
 
-    {% include 'partials/_index_divider_top.twig' with { background: '#f8fafc' } %}
+  <section class="h-screen bg-kilamanjaro" data-scroll-section>
 
-    {% include 'partials/_index_contact_with_map.twig' %}
-    </section>
+  </section>
 </div>
 {% endblock main %}
 

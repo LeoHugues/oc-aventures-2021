@@ -43,6 +43,11 @@ homepage:
             type: article
             localize: true
             group: "Tarifs et Plan du parc"
+        section_contact:
+            label: "Section Contact"
+            type: article
+            localize: true
+            group: "Section Contact"
         slug:
             type: slug
             uses: title
