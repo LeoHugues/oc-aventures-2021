@@ -78,9 +78,18 @@
 
   </div>
 
-  <section class="h-screen bg-kilamanjaro" data-scroll-section>
-
+  <section class="bg-kilamanjaro" data-scroll-section>
+    <div class="container max-w-5xl mx-auto pb-16 items-center">
+      {% for sponsor in homepage.sponsors %}
+        <div class="inline-block p-2 w-36 md:w-40">
+          <a href="{{ sponsor.link }}">
+            <img src="{{ sponsor.logo.url }}" />
+          </a>
+        </div>
+      {% endfor %}
+    </div>
   </section>
+
 </div>
 {% endblock main %}
 

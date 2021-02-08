@@ -48,6 +48,24 @@ homepage:
             type: article
             localize: true
             group: "Section Contact"
+        sponsors:
+            type: collection
+            label: Partenaires
+            group: Partenaires
+            fields:
+                sponsor:
+                    type: set
+                    label: Partenaire
+                    fields:
+                        title:
+                            type: text
+                            label: Nom
+                        logo:
+                            type: image
+                            label: Logo
+                        link:
+                            type: text
+                            label: lien
         slug:
             type: slug
             uses: title
