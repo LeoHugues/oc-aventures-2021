@@ -35,8 +35,14 @@ homepage:
             label: "Texte"
         intro_content:
             type: article
+            label: "Section d'Introduction"
             localize: true
             group: "Introduction"
+        section_tarif:
+            label: "Section Tarifs"
+            type: article
+            localize: true
+            group: "Tarifs"
         slug:
             type: slug
             uses: title

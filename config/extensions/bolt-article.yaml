@@ -4,8 +4,7 @@
 default:
   plugins: [ blockcode, buttonlink, definedlinks, inlineformat, reorder, tags, underline ]
   source: true
-  custom:
-    css: ['/theme/base-2021/css/tailwind.css', '/theme/base-2021/css/base-2021.css']
+  css: ['/theme/base-2021/css/tailwind.css', '/theme/base-2021/css/base-2021.css']
   grid:
     classname: 'article-grid'
     columns: 12

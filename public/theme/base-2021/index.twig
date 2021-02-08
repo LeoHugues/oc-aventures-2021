@@ -16,9 +16,13 @@
     </div>
       {% include 'partials/_index_divider_top.twig' %}
   </section>
- <div  id="parallax" data-scroll-section>
+
+
+  <div  id="parallax" data-scroll-section>
+
     {{ homepage.intro_content }}
-</div>
+    
+  </div>
 
   <section id="parallax_section" class="relative bg-vert-ciel full-w p-0 invisible md:visible" data-scroll-section>
     <div class="h-full w-full">
@@ -62,8 +66,9 @@
     </div>
   </section>
 
-  <section class="relative bg-rouge h-screen" data-scroll-section>
-  </section>
+  <div data-scroll-section>
+    {{ homepage.section_tarif }}
+  </div>
 
   <section data-scroll-section>
     {% include 'partials/_index_3_column_block_images.twig' with { contenttype: 'entries' } %}
