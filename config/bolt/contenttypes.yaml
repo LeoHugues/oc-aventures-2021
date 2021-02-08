@@ -42,7 +42,7 @@ homepage:
             label: "Section Tarifs"
             type: article
             localize: true
-            group: "Tarifs"
+            group: "Tarifs et Plan du parc"
         slug:
             type: slug
             uses: title

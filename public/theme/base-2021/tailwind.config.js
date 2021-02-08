@@ -5,7 +5,9 @@ module.exports = {
                 'vert-ciel': '#9ed8b0',
                 'sable': '#eddeab',
                 'rouge':'#87200c',
-                'sombre': '#222'
+                'sombre': '#222',
+                'kilamanjaro': '#160402'
+                  
             },
             fontFamily: {
                 sans: ['Raleway', 'sans-serif'],
