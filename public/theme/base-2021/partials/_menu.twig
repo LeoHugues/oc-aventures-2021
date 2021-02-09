@@ -24,20 +24,27 @@
 {% endmacro %}
 
 {% macro display_main(item) %}
-    <a href="{{ item.uri }}"
+
+    <a
     {% if item|current %}
        class="px-4 py-2 md:py-4 mt-4 uppercase text-1xl tracking-tight font-bold text-sombre bg-sable md:mt-0 hover:text-sombre focus:text-sombre hover:bg-sable focus:sable focus:outline-none focus:shadow-outline"
     {% else %}
         class="px-4 py-2 md:py-4 mt-4 uppercase text-1xl tracking-tight font-bold md:mt-0 hover:text-sombre focus:text-sombre hover:bg-sable focus:bg-sable focus:outline-none focus:shadow-outline"
     {% endif %}
+    
+    {% if item.class is defined %}
+        href="{{ item.link }}"
+        {{ item.class }}
+    {% else %}
+        href="{{ item.uri }}"
+    {% endif %}
     >
-        {{ item.label|default(item.title) }}
+        {{ item.label }}
     </a>
 {% endmacro %}
 
 <nav :class="{'flex': open, 'hidden': !open}"
      class="z-30 top-0 currentColor flex-col flex-grow hidden md:flex md:justify-end md:flex-row">
-
     {% for item in menu %}
 
         {% if not item.submenu %}

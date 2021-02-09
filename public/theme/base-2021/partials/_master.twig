@@ -45,17 +45,38 @@
 
 </head>
 
-<body class="leading-normal tracking-normal gradient font-sans">
-  {% include 'partials/_navigation.twig' %}
+<body class="leading-normal tracking-normal gradient font-sans bg-kilamanjaro">
+  <div  data-scroll-container>
+    {% include 'partials/_navigation.twig' %}
 
-  {% block main %}
-  (This is <code>block main</code>)
-  {% endblock main %}
-
-  {% include 'partials/_footer.twig' %}
+    {% block main %}
+    (This is <code>block main</code>)
+    {% endblock main %}
+  </div>
 
   <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
   <script defer src="{{ asset('js/app.js') }}"></script>
+  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+  <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+  <script defer src="{{ asset('js/locomotive-scroll.min.js') }}"></script>
+
+  <script type="module">
+    (function () {
+        var scroll = new LocomotiveScroll({
+          el: document.querySelector('[data-scroll-container]'),
+          smooth: true,
+          multiplier: 1,
+          smartphone: {
+              smooth: true
+          },
+          tablet: {
+              smooth: true
+          }
+        });
+
+    })();
+  </script>
+
   {% block script %}
   {% endblock %}
 </body>

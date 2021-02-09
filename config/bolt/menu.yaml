@@ -2,10 +2,10 @@
 # details: https://docs.bolt.cm/configuration/menus
 
 main:
-  - label: Home
+  - label: accueil
     title: This is the <b>first<b> menu item.
-    link: homepage
-    class: homepage
+    link: '#home'
+    class: data-scroll-to
   - label: About
     link: page/2
     submenu:
@@ -17,11 +17,12 @@ main:
         - link: entry/41 # These two have no `label`, so they will show up as the title
         - class: sub-class
           link: page/42
-  - label: All pages
-    link: pages/
-  - label: The Bolt site
-    link: https://boltcms.io
-    class: bolt-site
-    title: Visit the excellent Bolt website!
+  - label: tarifs
+    link: '#tarifs'
+    class: data-scroll-to
+  - label: contact horaires
+    link: '#contact'
+    class: data-scroll-to
+
 
 foo: bar
