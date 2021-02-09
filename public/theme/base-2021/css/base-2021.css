@@ -426,3 +426,59 @@ html {
     font-size: clamp(1.875rem, 2.5vw, 2.25rem);
   }
 }
+
+@media (min-width: 1040px) {
+  .lg2\:article>p {
+    margin: 1rem 0;
+    font-size: clamp(1.1rem, 1.1vw, 1.6rem);
+  }
+
+  .lg2\:article > ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    font-size: clamp(1.1rem, 1.1vw, 1.6rem);
+  }
+
+  .lg2\:article > ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: clamp(1.1rem, 1.1vw, 1.6rem);
+  }
+
+  .lg2\:article h1 {
+    font-size: clamp(1.875rem, 2.5vw, 2.25rem)
+  }
+
+  .lg2\:article h2 {
+    font-size: clamp(1.5rem, 2vw, 1.875rem)
+  }
+
+  .lg2\:article h3 {
+    font-size: clamp(1.25rem, 1.75vw, 1.5rem);
+    font-weight: 700;
+  }
+
+  .lg2\:article h4 {
+    font-size: clamp(1.125rem, 1.5vw, 1.25rem)
+  }
+
+  .lg2\:article h5 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .lg2\:article h6 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .lg2\:article blockquote>p {
+    border-left-width: 4px;
+    border-color: #b2f5ea;
+    font-style: italic;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    font-size: clamp(1.875rem, 2.5vw, 2.25rem);
+  }
+}

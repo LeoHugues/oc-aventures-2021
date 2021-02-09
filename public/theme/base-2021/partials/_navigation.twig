@@ -1,13 +1,14 @@
 <!--Nav-->
 <div id="header" class="text-sable fixed top-0 w-full z-30 bg-sombre">
   <div x-data="{ open: false }"
-    class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-4">
+    class="flex flex-col max-w-screen-xl px-4 mx-auto lg2:items-center lg2:justify-between lg2:flex-row lg2:px-4">
     <div class="py-0 flex flex-row items-center justify-between">
-      <a href="{{ path('homepage') }}" class="font-bold text-lg md:text-2xl tracking-tight currentColor uppercase rounded-lg focus:outline-none focus:shadow-outline">
+      <a href="{{ path('homepage') }}" class="relative font-bold text-lg2 xl:text-2xl tracking-tight currentColor uppercase rounded-lg2 focus:outline-none focus:shadow-outline">
         {% include 'img/logo.svg' %}
         {{ config.get('general/sitename') }}
+        <label class="absolute bottom-0 text-gray-400 text-sm tracking-wide	transform -translate-x-16">0613313811</label>
       </a>
-      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+      <button class="lg2:hidden rounded-lg2 focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
           <path x-show="!open" fill-rule="evenodd"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"

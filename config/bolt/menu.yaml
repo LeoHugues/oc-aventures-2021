@@ -3,20 +3,23 @@
 
 main:
   - label: accueil
-    title: This is the <b>first<b> menu item.
     link: '#home'
     class: data-scroll-to
-  - label: About
-    link: page/2
+  - label: accrobranche
     submenu:
-        - label: Sub 1
-          link: entry/39
-        - label: Sub 2
-          class: menu-item-class
-          link: entry/40
-        - link: entry/41 # These two have no `label`, so they will show up as the title
-        - class: sub-class
-          link: page/42
+        - link: entry/213
+        - link: entry/214
+        - link: entry/215
+        - link: entry/216
+  - link: entry/217
+
+  - label: groupes
+    submenu:
+        - link: entry/208
+        - link: entry/209
+        - link: entry/210
+        - link: entry/211
+        - link: entry/212
   - label: tarifs
     link: '#tarifs'
     class: data-scroll-to

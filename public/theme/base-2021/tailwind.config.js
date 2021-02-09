@@ -13,6 +13,9 @@ module.exports = {
                 sans: ['Raleway', 'sans-serif'],
                 serif: ['Raleway', 'serif'],
             },
+            screens: {
+                'lg2': '1040px',
+              },
         },
     }
 }
