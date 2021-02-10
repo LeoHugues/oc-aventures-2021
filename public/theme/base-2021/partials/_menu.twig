@@ -33,8 +33,12 @@
     {% endif %}
 
     {% if item.class is defined %}
-        href="{{ item.link }}"
-        {{ item.class }}
+        {% if record.contenttype == 'pages' %}
+            href="{{ path('homepage') }}{{ htmllang() }}/{{ item.link }}"
+        {% else %}
+            href="{{ item.link }}"
+            {{ item.class }}
+        {% endif %}
     {% else %}
         href="{{ item.uri }}"
     {% endif %}
