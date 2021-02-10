@@ -2,17 +2,17 @@
 
 # All options: blockcode, buttonlink, definedlinks, handle, inlineformat, icons, specialchars, reorder, print, selector, style, tags, underline, variable
 default:
-  plugins: [ blockcode, buttonlink, definedlinks, inlineformat, reorder, tags, underline ]
+  plugins: [ blockcode, buttonlink, definedlinks, inlineformat, reorder, tags, underline, fullscreen ]
   source: true
   css: ['/theme/base-2021/css/tailwind.css', '/theme/base-2021/css/base-2021.css']
   grid:
-    classname: 'article-grid'
+    classname: 'container max-w-5xl mx-auto mt-0 m-8'
     columns: 12
     patterns:
-      '4|4|4': 'col-4|col-4|col-4'
-      '4|8': 'col-4|col-8'
-      '6|6': 'col-6|col-6'
-      '8|4': 'col-8|col-4'
+      '4|4|4': 'w-1/3|w-1/3|w-1/3'
+      '4|8': 'w-1/3|w-2/3'
+      '6|6': 'w-1/2|w-1/2'
+      '8|4': 'w-2/3|w-1/3'
   image:
     thumbnail: 1000×1000×max
 
