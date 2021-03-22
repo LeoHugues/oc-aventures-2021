@@ -114,11 +114,29 @@ html {
 }
 
 /* Base grid for "Article" powered Fields */
-
 .c-direction-block_item {
     transform: rotate(18.7deg);
-}
-
-#parallax_section {
-    height: calc(100vw * 0.65);
-}
+  }
+  
+  #parallax_section {
+    height: 60vw;
+  }
+  
+  @media (min-width: 795px) and (max-width: 840px) {
+    #rider img {
+      transform: translateY(0rem);
+    }
+  }
+  
+  @media (min-width: 840px)  and (max-width: 930px){
+    #rider img {
+      transform: translateY(-1rem);
+    }
+  }
+  
+  @media (min-width: 930px) and (max-width: 1024px) {
+    #rider img {
+      transform: translateY(-1.5rem);
+    }
+  }
+  

@@ -144,7 +144,25 @@ html {
 }
 
 #parallax_section {
-  height: calc(100vw * 0.65);
+  height: 60vw;
+}
+
+@media (min-width: 795px) and (max-width: 840px) {
+  #rider img {
+    transform: translateY(0rem);
+  }
+}
+
+@media (min-width: 840px)  and (max-width: 930px){
+  #rider img {
+    transform: translateY(-1rem);
+  }
+}
+
+@media (min-width: 930px) and (max-width: 1024px) {
+  #rider img {
+    transform: translateY(-1.5rem);
+  }
 }
 
 @media (min-width: 640px) {
@@ -482,3 +500,4 @@ html {
     font-size: clamp(1.875rem, 2.5vw, 2.25rem);
   }
 }
+  
