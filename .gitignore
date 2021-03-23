@@ -1,18 +1,25 @@
-composer.phar
-config/bolt/*_local.yaml
+# Comment out the following line, if you wish to store your SQLite database in Git
+/var/data/*
 
-### Uploads ###
+###> bolt/core ###
+config/bolt/*_local.yaml
+/config/packages/local
+/config/routes/local
 /public/files/*
 !/public/files/.gitkeep
 !/public/files/index.html
+/public/themes/*
+!/public/themes/.gitkeep
 /public/thumbs/*
 !/public/thumbs/.gitkeep
 !/public/thumbs/index.html
+###< bolt/core ###
 
 ### NPM and frontend assets building cruft
 node_modules/
 npm-debug.log
 yarn-error.log
+build_assets.sh
 
 ### File-system cruft and temporary files
 __*
@@ -35,32 +42,10 @@ Vagrantfile
 .vscode/*
 appveyor.yml
 
-### temp files
-/var/cache/*
-!/var/cache/.gitkeep
-/var/log/*
-!/var/log/.gitkeep
-!/var/log/e2e-reports/performance/.gitkeep
-!/var/log/e2e-reports/report/.gitkeep
-!/var/log/behat-reports/.gitkeep
-/var/data/*
-!/var/data/.gitkeep
-/var/sessions/*
-!/var/sessions/.gitkeep
-
-###Local config
-/config/packages/local
-/config/routes/local
-.php-version
-
-###> symfony/framework-bundle ###
-/.env
-/public/bundles/
-/vendor/
-###< symfony/framework-bundle ###
-###> symfony/web-server-bundle ###
-/.web-server-pid
-###< symfony/web-server-bundle ###
+###> Docker ###
+docker-compose.override.yml
+docker-compose.override.yaml
+###< Docker ###
 
 ###> friendsofphp/php-cs-fixer ###
 /.php_cs
@@ -72,7 +57,23 @@ appveyor.yml
 /phpcs.xml
 ###< squizlabs/php_codesniffer ###
 
-###> phpunit/phpunit ###
-/phpunit.xml
-###< phpunit/phpunit ###
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/assets/
+/public/bundles/
+/var/cache/*
+!/var/cache/.gitkeep
+/var/log/*
+!/var/log/.gitkeep
+!/var/data/.gitkeep
+/var/sessions/*
+!/var/sessions/.gitkeep
+/vendor/
+.web-server-pid
+###< symfony/framework-bundle ###
 
+### vs code
+/.editorconfig
