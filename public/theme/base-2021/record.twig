@@ -1,0 +1,22 @@
+{% extends 'partials/_master.twig' %}
+
+{% block main %}
+
+<!--Container-->
+
+<section class="bg-sable mt-10 w-full" data-scroll-section>
+
+  <div class="mb-4 md:mb-0 w-full mx-auto relative" style="height: 32em;">
+
+    <img src="{{ record|image }}" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
+
+  {% include 'partials/_record_divider_top.twig' %}
+
+  </div>
+  
+  {{ record.body }}
+
+</section>
+<!--/container-->
+
+{% endblock main %}

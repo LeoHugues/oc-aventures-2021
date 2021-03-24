@@ -1,0 +1,136 @@
+# Settings for Bolt Article
+
+# All options: blockcode, buttonlink, definedlinks, handle, inlineformat, icons, specialchars, reorder, print, selector, style, tags, underline, variable
+default:
+  plugins: [ blockcode, buttonlink, definedlinks, inlineformat, reorder, underline, style, icons, specialchars, print, selector, imageposition]
+  source: true
+  custom:
+    css: ['/theme/base-2021/css/tailwind.css', '/theme/base-2021/css/base-2021.css']
+
+  styles:      
+      text:
+        'lead':
+          title: '<span style="font-size: 1rem; color: #363636;font-family: Bitter; font-weight: 700;">STYLE IMPORTANT</span>'
+          classname: 'font-bold font-serif uppercase'
+        'normal-block':
+          title: '<span style="font-size: 1rem; color: #363636;font-family: Roboto, sans-serif;">Style Normal</span>'
+          classname: 'text-black text-base bg-white font-sans'
+        'pink-block':
+          title: '<span style="font-size: 1rem; background-color: #C23587;font-family: Roboto, sans-serif;color: #FFFFFF; padding: 4px; border-radius:3px;">Fond Rose</span>'
+          classname: 'text-white bg-pink text-base font-sans'
+        'blue-block':
+          title: '<span style="font-size: 1rem; background-color: #72A1E5;color: #FFFFFF;font-family: Roboto, sans-serif; padding: 4px; border-radius:3px;">Fond Bleu</span>'
+          classname: 'text-white bg-blue text-base font-sans'
+      
+      heading:
+        'h-normal-block':
+          title: '<span style="font-size: 1rem; color: #363636;font-family: Roboto, sans-serif;">Style Normal</span>'
+          classname: 'text-black text-base bg-white font-sans'
+        'h-pink-block':
+          title: '<span style="font-size: 1rem; background-color: #C23587;font-family: Roboto, sans-serif;color: #FFFFFF; padding: 4px; border-radius:3px;">Fond Rose</span>'
+          classname: 'text-white bg-pink text-base font-sans'
+        'h-blue-block':
+          title: '<span style="font-size: 1rem; background-color: #72A1E5;color: #FFFFFF;font-family: Roboto, sans-serif; padding: 4px; border-radius:3px;">Fond Bleu</span>'
+          classname: 'text-white bg-blue text-base font-sans'
+      
+      layer:
+        'section-base':
+          title: '<span style="font-size: 1rem; background-color: #FFFFFF;font-family: Roboto, sans-serif;color: #363636; padding: 4px; border-radius:3px;">Section Style Normal</span>'
+          classname: 'section text-black bg-white text-base font-sans'
+        'section-pink':
+          title: '<span style="font-size: 1rem; background-color: #C23587;font-family: Roboto, sans-serif;color: #FFFFFF; padding: 4px; border-radius:3px;">Section Style Rose</span>'
+          classname: 'section text-white bg-pink text-base font-sans'
+        'section-blue':
+          title: '<span style="font-size: 1rem; background-color: #72A1E5;color: #FFFFFF;font-family: Roboto, sans-serif; padding: 4px; border-radius:3px;">Section Style Bleu</span>'
+          classname: 'section text-white bg-blue text-base font-sans'
+  
+  icons:
+    items: [ 😀, 😃, 😄, 😁, 😆, 😅, 😂, 🤣, 😊, 😇, 🙂, 🙃, 😉, 😌, 😍, 🥰, 😘, 😗, 😙, 😚, 😋, 😛, 😝, 😜, 🤪, 🤨, 🧐, 🤓, 😎, 🤩, 🥳, 😏, 😒, 😞, 😔, 😟, 😕, 🙁, 😣, 😖, 😫, 😩, 🥺, 😢, 😭, 😤, 😠, 😡, 🤬, 🤯, 😳, 🥵, 🥶, 😱, 😨, 😰, 😥, 😓, 🤗, 🤔, 🤭, 🤫, 🤥, 😶, 😐, 😑, 😬, 🙄, 😯, 😦, 😧, 😮, 😲, 🥱, 😴, 🤤, 😪, 😵, 🤐, 🥴, 🤢, 🤮, 🤧, 😷, 🤒, 🤕, 🤑, 🤠, 😈, 👿, 👹, 👺, 🤡, 💩, 👻, 💀, ☠️, 👽, 👾, 🤖, 🎃, 😺, 😸, 😹, 😻, 😼, 😽, 🙀, 😿, 😾,
+    👋, 🤚, 🖐, ✋, 🖖, 👌, 🤏, 🤞, 🤟, 🤘, 🤙, 👈, 👉, 👆, 🖕, 👇, 👍, 👎, ✊, 👊, 🤛, 🤜, 👏, 🙌, 👐, 🤲, 🤝, 🙏, ✍️, 💅, 🤳, 💪, 🦾, 🦵, 🦿, 🦶, 👣, 👂, 🦻, 👃, 🧠, 🦷, 🦴, 👀, 👁, 👅, 👄, 💋, 🩸,
+    🐶, 🐱, 🐭, 🐹, 🐰, 🦊, 🐻, 🐼, 🐻‍❄️, 🐨, 🐯, 🦁, 🐮, 🐷, 🐽, 🐸, 🐵, 🙈, 🙉, 🙊, 🐒, 🐔, 🐧, 🐦, 🐤, 🐣, 🐥, 🦆, 🦅, 🦉, 🦇, 🐺, 🐗, 🐴, 🦄, 🐝, 🐛, 🦋, 🐌, 🐞, 🐜, 🦟, 🦗, 🕷, 🕸, 🦂, 🐢, 🐍, 🦎, 🦖, 🦕, 🐙, 🦑, 🦐, 🦞, 🦀, 🐡, 🐠, 🐟, 🐬, 🐳, 🐋, 🦈, 🐊, 🐅, 🐆, 🦓, 🦍, 🦧, 🐘, 🦛, 🦏, 🐪, 🐫, 🦒, 🦘, 🐃, 🐂, 🐄, 🐎, 🐖, 🐏, 🐑, 🦙, 🐐, 🦌, 🐕, 🐩, 🦮, 🐕‍🦺, 🐈, 🐈‍, 🐓, 🦃, 🦚, 🦜, 🦢, 🦩, 🕊, 🐇, 🦝, 🦨, 🦡, 🦦, 🦥, 🐁, 🐀, 🐿, 🦔, 🐾, 🐉, 🐲, 🌵, 🎄, 🌲, 🌳, 🌴, 🌱, 🌿, ☘️, 🍀, 🎍, 🎋, 🍃, 🍂, 🍁, 🍄, 🐚, 🌾, 💐, 🌷, 🌹, 🥀, 🌺, 🌸, 🌼, 🌻, 🌞, 🌝, 🌛, 🌜, 🌚, 🌕, 🌖, 🌗, 🌘, 🌑, 🌒, 🌓, 🌔, 🌙, 🌎, 🌍, 🌏, 🪐, 💫, ⭐️, 🌟, ✨, ⚡️, ☄️, 💥, 🔥, 🌪, 🌈, ☀️, 🌤, ⛅️, 🌥, ☁️, 🌦, 🌧, ⛈, 🌩, 🌨, ❄️, ☃️, ⛄️, 🌬, 💨, 💧, 💦, ☔️, ☂️, 🌊, 🌫,
+    🍏, 🍎, 🍐, 🍊, 🍋, 🍌, 🍉, 🍇, 🍓, 🍈, 🍒, 🍑, 🥭, 🍍, 🥥, 🥝, 🍅, 🍆, 🥑, 🥦, 🥬, 🥒, 🌽, 🥕, 🧄, 🧅, 🥔, 🍠, 🥐, 🥯, 🍞, 🥖, 🥨, 🧀, 🥚, 🍳, 🧈, 🥞, 🧇, 🥓, 🥩, 🍗, 🍖, 🦴, 🌭, 🍔, 🍟, 🍕, 🥪, 🥙, 🧆, 🌮, 🌯, 🥗, 🥘, 🥫, 🍝, 🍜, 🍲, 🍛, 🍣, 🍱, 🥟, 🦪, 🍤, 🍙, 🍚, 🍘, 🍥, 🥠, 🥮, 🍢, 🍡, 🍧, 🍨, 🍦, 🥧, 🧁, 🍰, 🎂, 🍮, 🍭, 🍬, 🍫, 🍿, 🍩, 🍪, 🌰, 🥜, 🍯, 🥛, 🍼, ☕️, 🍵, 🧃, 🥤, 🍶, 🍺, 🍻, 🥂, 🍷, 🥃, 🍸, 🍹, 🧉, 🍾, 🧊, 🥄, 🍴, 🍽, 🥣, 🥡, 🥢, 🧂,
+    ⚽️, 🏀, 🏈, ⚾️, 🥎, 🎾, 🏐, 🏉, 🥏, 🎱, 🪀, 🏓, 🏸, 🏒, 🏑, 🥍, 🏏, 🥅, ⛳️, 🪁, 🏹, 🎣, 🤿, 🥊, 🥋, 🎽, 🛹, 🛷, ⛸, 🥌, 🎿, ⛷, 🏂, 🪂, 🏋️‍♀️, 🏋️, 🏋️‍♂️, 🤼‍♀️, 🤼, 🤼‍♂️, 🤸‍♀️, 🤸, 🤸‍♂️, ⛹️‍♀️, ⛹️, ⛹️‍♂️, 🤺, 🤾‍♀️, 🤾, 🤾‍♂️, 🏌️‍♀️, 🏌️, 🏌️‍♂️, 🏇, 🧘‍♀️, 🧘, 🧘‍♂️, 🏄‍♀️, 🏄, 🏄‍♂️, 🏊‍♀️, 🏊, 🏊‍♂️, 🤽‍♀️, 🤽, 🤽‍♂️, 🚣‍♀️, 🚣, 🚣‍♂️, 🧗‍♀️, 🧗, 🧗‍♂️, 🚵‍♀️, 🚵, 🚵‍♂️, 🚴‍♀️, 🚴, 🚴‍♂️, 🏆, 🥇, 🥈, 🥉, 🏅, 🎖, 🏵, 🎗, 🎫, 🎟, 🎪, 🤹, 🤹‍♂️, 🤹‍♀️, 🎭, 🩰, 🎨, 🎬, 🎤, 🎧, 🎼, 🎹, 🥁, 🎷, 🎺, 🎸, 🪕, 🎻, 🎲, ♟, 🎯, 🎳, 🎮, 🎰, 🧩,
+    🚗, 🚕, 🚙, 🚌, 🚎, 🏎, 🚓, 🚑, 🚒, 🚐, 🚚, 🚛, 🚜, 🦯, 🦽, 🦼, 🛴, 🚲, 🛵, 🏍, 🛺, 🚨, 🚔, 🚍, 🚘, 🚖, 🚡, 🚠, 🚟, 🚃, 🚋, 🚞, 🚝, 🚄, 🚅, 🚈, 🚂, 🚆, 🚇, 🚊, 🚉, ✈️, 🛫, 🛬, 🛩, 💺, 🛰, 🚀, 🛸, 🚁, 🛶, ⛵️, 🚤, 🛥, 🛳, ⛴, 🚢, ⚓️, ⛽️, 🚧, 🚦, 🚥, 🚏, 🗺, 🗿, 🗽, 🗼, 🏰, 🏯, 🏟, 🎡, 🎢, 🎠, ⛲️, ⛱, 🏖, 🏝, 🏜, 🌋, ⛰, 🏔, 🗻, 🏕, ⛺️, 🏠, 🏡, 🏘, 🏚, 🏗, 🏭, 🏢, 🏬, 🏣, 🏤, 🏥, 🏦, 🏨, 🏪, 🏫, 🏩, 💒, 🏛, ⛪️, 🕌, 🕍, 🛕, 🕋, ⛩, 🛤, 🛣, 🗾, 🎑, 🏞, 🌅, 🌄, 🌠, 🎇, 🎆, 🌇, 🌆, 🏙, 🌃, 🌌, 🌉, 🌁,
+    ⌚️, 📱, 📲, 💻, ⌨️, 🖥, 🖨, 🖱, 🖲, 🕹, 🗜, 💽, 💾, 💿, 📀, 📼, 📷, 📸, 📹, 🎥, 📽, 🎞, 📞, ☎️, 📟, 📠, 📺, 📻, 🎙, 🎚, 🎛, 🧭, ⏱, ⏲, ⏰, 🕰, ⌛️, ⏳, 📡, 🔋, 🔌, 💡, 🔦, 🕯, 🪔, 🧯, 🛢, 💸, 💵, 💴, 💶, 💷, 💰, 💳, 💎, ⚖️, 🧰, 🔧, 🔨, ⚒, 🛠, ⛏, 🔩, ⚙️, 🧱, ⛓, 🧲, 🔫, 💣, 🧨, 🪓, 🔪, 🗡, ⚔️, 🛡, 🚬, ⚰️, ⚱️, 🏺, 🔮, 📿, 🧿, 💈, ⚗️, 🔭, 🔬, 🕳, 🩹, 🩺, 💊, 💉, 🩸, 🧬, 🦠, 🧫, 🧪, 🌡, 🧹, 🪠, 🧺, 🧻, 🚽, 🚰, 🚿, 🛁, 🛀, 🧼, 🪥, 🪒, 🧽, 🪣, 🧴, 🛎, 🔑, 🗝, 🚪, 🪑, 🛋, 🛏, 🛌, 🧸, 🛒, 🎁, 🎈, 🎏, 🎀, 🎉, 🎎, 🏮, 🎐, 🧧, ✉️, 📩, 📨, 📧, 💌, 📥, 📤, 📦, 🏷, 🪧, 📪, 📫, 📬, 📭, 📮, 📯, 📜, 📃, 📄, 📑, 🧾, 📊, 📈, 📉, 🗒, 🗓, 📆, 📅, 🗑, 📇, 🗃, 🗳, 🗄, 📋, 📁, 📂, 🗂, 🗞, 📰, 📓, 📔, 📒, 📕, 📗, 📘, 📙, 📚, 📖, 🔖, 🧷, 🔗, 📎, 🖇, 📐, 📏, 🧮, 📌, 📍, ✂️, 🖊, 🖋, ✒️, 🖌, 🖍, 📝, ✏️, 🔍, 🔎, 🔏, 🔐, 🔒, 🔓,  
+    🏳️,🏴,🏁,🚩,🏳️‍🌈,🏳️‍⚧️,🏴‍☠️,🇦🇫,🇦🇽,🇦🇱,🇩🇿,🇦🇸,🇦🇩,🇦🇴,🇦🇮,🇦🇶,🇦🇬,🇦🇷,🇦🇲,🇦🇼,🇦🇺,🇦🇹,🇦🇿,🇧🇸,🇧🇭,🇧🇩,🇧🇧,🇧🇾,🇧🇪,🇧🇿,🇧🇯,🇧🇲,🇧🇹,🇧🇴,🇧🇦,🇧🇼,🇧🇷,🇮🇴,🇻🇬,🇧🇳,🇧🇬,🇧🇫,🇧🇮,🇰🇭,🇨🇲,🇨🇦,🇮🇨,🇨🇻,🇧🇶,🇰🇾,🇨🇫,🇹🇩,🇨🇱,🇨🇳,🇨🇽,🇨🇨,🇨🇴,🇰🇲,🇨🇬,🇨🇩,🇨🇰,🇨🇷,🇨🇮,🇭🇷,🇨🇺,🇨🇼,🇨🇾,🇨🇿,🇩🇰,🇩🇯,🇩🇲,🇩🇴,🇪🇨,🇪🇬,🇸🇻,🇬🇶,🇪🇷,🇪🇪,🇪🇹,🇪🇺,🇫🇰,🇫🇴,🇫🇯,🇫🇮,🇫🇷,🇬🇫,🇵🇫,🇹🇫,🇬🇦,🇬🇲,🇬🇪,🇩🇪,🇬🇭,🇬🇮,🇬🇷,🇬🇱,🇬🇩,🇬🇵,🇬🇺,🇬🇹,🇬🇬,🇬🇳,🇬🇼,🇬🇾,🇭🇹,🇭🇳,🇭🇰,🇭🇺,🇮🇸,🇮🇳,🇮🇩,🇮🇷,🇮🇶,🇮🇪,🇮🇲,🇮🇱,🇮🇹,🇯🇲,🇯🇵,🎌,🇯🇪,🇯🇴,🇰🇿,🇰🇪,🇰🇮,🇽🇰,🇰🇼,🇰🇬,🇱🇦,🇱🇻,🇱🇧,🇱🇸,🇱🇷,🇱🇾,🇱🇮,🇱🇹,🇱🇺,🇲🇴,🇲🇰,🇲🇬,🇲🇼,🇲🇾,🇲🇻,🇲🇱,🇲🇹,🇲🇭,🇲🇶,🇲🇷,🇲🇺,🇾🇹,🇲🇽,🇫🇲,🇲🇩,🇲🇨,🇲🇳,🇲🇪,🇲🇸,🇲🇦,🇲🇿,🇲🇲,🇳🇦,🇳🇷,🇳🇵,🇳🇱,🇳🇨,🇳🇿,🇳🇮,🇳🇪,🇳🇬,🇳🇺,🇳🇫,🇰🇵,🇲🇵,🇳🇴,🇴🇲,🇵🇰,🇵🇼,🇵🇸,🇵🇦,🇵🇬,🇵🇾,🇵🇪,🇵🇭,🇵🇳,🇵🇱,🇵🇹,🇵🇷,🇶🇦,🇷🇪,🇷🇴,🇷🇺,🇷🇼,🇼🇸,🇸🇲,🇸🇦,🇸🇳,🇷🇸,🇸🇨,🇸🇱,🇸🇬,🇸🇽,🇸🇰,🇸🇮,🇬🇸,🇸🇧,🇸🇴,🇿🇦,🇰🇷,🇸🇸,🇪🇸,🇱🇰,🇧🇱,🇸🇭,🇰🇳,🇱🇨,🇵🇲,🇻🇨,🇸🇩,🇸🇷,🇸🇿,🇸🇪,🇨🇭,🇸🇾,🇹🇼,🇹🇯,🇹🇿,🇹🇭,🇹🇱,🇹🇬,🇹🇰,🇹🇴,🇹🇹,🇹🇳,🇹🇷,🇹🇲,🇹🇨,🇹🇻,🇻🇮,🇺🇬,🇺🇦,🇦🇪,🇬🇧,🏴󠁧󠁢󠁥󠁮󠁧󠁿,🏴󠁧󠁢󠁳󠁣󠁴󠁿,🏴󠁧󠁢󠁷󠁬󠁳󠁿,🇺🇳,🇺🇸,🇺🇾,🇺🇿,🇻🇺,🇻🇦,🇻🇪,🇻🇳,🇼🇫,🇪🇭,🇾🇪,🇿🇲,🇿🇼
+    ]
+    width: 200
+
+  draggable_menu: 
+    template: '@draggable/_draggable_menu.twig'
+    css: 'assets/article/css/draggable-menu-default.css'
+    js: 'assets/article/js/draggable-menu.js'
+  
+  draggable:
+    'card-01':        '@draggable/components/card/_card_01.twig'
+    'card-02':        '@draggable/components/card/_card_02.twig'
+    'paragraph':      '@draggable/components/general/_paragraph.twig'
+    'text':           '<div class="text-arx">Lorem ipsum dolor si amet</div>'
+    'heading-large':  '@draggable/components/general/_heading_large.twig'
+    'heading-medium': '@draggable/components/general/_heading_medium.twig'
+    'heading-small':  '@draggable/components/general/_heading_small.twig'
+    'header-01':      '@draggable/components/headers/_header_01.twig'
+    'image':          '@draggable/components/general/_image.twig'
+    'embed':          '@draggable/components/general/_embed.twig'
+    'video':          '@draggable/components/general/_video.twig'
+    'layer':          '@draggable/components/design/_layer.twig'
+    'container':      '@draggable/components/design/_container.twig'
+    'line':           '@draggable/components/general/_line.twig'
+    'quote':          '@draggable/components/general/_quote.twig'
+    'code':           '@draggable/components/general/_code.twig'
+    'hero-01':        '@draggable/components/heros/_hero_01.twig'
+    'features-01':    '@draggable/components/features/_features_01.twig'
+    'testimonial-01': '@draggable/components/testimonials/_testimonial_01.twig'
+    'pricing-01':     '@draggable/components/pricing/_pricing_01.twig'
+    'flex-03':        '@draggable/components/design/_flex_03.twig'
+    'flex-02':        '@draggable/components/design/_flex_02.twig'
+    'flex-04':        '@draggable/components/design/_flex_04.twig'
+    'grid-01':        '@draggable/components/design/_grid_01.twig'
+    'grid-02':        '@draggable/components/design/_grid_02.twig'
+    'grid-03':        '@draggable/components/design/_grid_03.twig'
+    'grid-04':        '@draggable/components/design/_grid_04.twig'
+
+  grid:
+    classname: 'grid grid-cols-6 gap-4'
+    columns: 12
+    patterns:
+      '4|4|4': 'col-span-2|col-span-2|col-span-2'
+      '4|8': 'col-span-2|col-span-4'
+      '6|6': 'col-span-3|col-span-3'
+      '8|4': 'col-span-4|col-span-2'
+
+  text:
+    classname: 'text-arx'
+    
+  align:
+    'left': 'text-left'
+    'center': 'text-center'
+    'right': 'text-right'
+    'justify': 'text-justify'
+
+  format: ['div', 'h1', 'h2', 'h3', 'ul', 'ol']
+
+  image:
+    thumbnail: 1000×1000×max
+
+  imageposition:
+      items:
+          left: 'float-left'
+          center: false
+          right: 'float-right'
+
+  codemirror:
+    lineNumbers: true
+
+  editor:
+    markup: text
+    grammarly: true
+    minHeight: '600px'
+    add: 'bottom'
+
+  addbarAdd: ['text']
+  addbarHide: ['paragraph']
+
+
+plugins:
+  ~

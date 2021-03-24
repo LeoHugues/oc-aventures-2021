@@ -1,0 +1,13 @@
+# Settings for Bolt Redactor
+
+# All options: html, format, bold, italic, deleted, lists, link, file, line, redo, undo, underline, ol, ul, indent, outdent, sup, sub
+default:
+  buttons: [ bold, italic, format, lists, link, html, image ]
+  plugins: [ fullscreen, table, inlinestyle, video, widget ]
+  source: true
+  css: ['/theme/base-2021/css/tailwind.css', '/theme/base-2021/css/base-2021.css']
+  image:
+    thumbnail: 1000×1000×max
+
+plugins:
+  ~
