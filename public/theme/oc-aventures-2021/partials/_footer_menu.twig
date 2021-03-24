@@ -1,0 +1,43 @@
+<div class="w-full sm:w-60 p-4 relative">
+    <h2 class="text-sable font-semibold leading-tight text-center mb-3 uppercase">GENERAL</h2>
+    <nav class="list-none mb-12">
+        <ul>
+            {% for item in menu %}
+                {% if not item.submenu %}
+                    <li><a class="hover:underline capitalize" href="{{ item.uri }}">{{ item.label|default(item.title) }}</a></li>
+                {% endif %}
+            {% endfor %}  
+        </ul>
+    </nav>
+</div>
+
+{% for item in menu %}
+    {% if item.submenu %}
+    <div class="w-full sm:w-60 p-4 relative">
+        <h2 class="text-sable font-semibold leading-tight text-center mb-3 uppercase">{{ item.label|default(item.title) }}</h2>
+        <nav class="list-none mb-12">
+            <ul>
+                {% for item in item.submenu %}
+                    <li><a class="hover:underline capitalize" href="{{ item.uri }}">{{ item.label|default(item.title) }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+    {% endif %}
+{% endfor %}  
+
+<div class="w-full sm:w-60 p-4 relative">
+    <h2 class="text-sable font-semibold leading-tight text-center mb-3 uppercase">INFO</h2>
+    <div class="mb-12">
+        <p>
+            Lieu Dit Le Boulidou
+            <br>
+            34270 St Jean de Cuculles
+            <br>
+            <b> 06 19 89 53 86</b>
+            <br>
+            <b> info@oc-aventures.com</b>
+        </p>
+        {% include "partials/_search_widget.twig" %}
+    </div>
+</div>
