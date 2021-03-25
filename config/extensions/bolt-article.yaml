@@ -5,7 +5,7 @@ default:
   plugins: [ blockcode, buttonlink, definedlinks, inlineformat, reorder, underline, style, icons, specialchars, print, selector, imageposition]
   source: true
   custom:
-    css: ['/theme/base-2021/css/tailwind.css', '/theme/base-2021/css/base-2021.css']
+    css: ['/theme/oc-aventures-2021/css/tailwind.css', '/theme/oc-aventures-2021/css/base-2021.css']
 
   styles:      
       text:
