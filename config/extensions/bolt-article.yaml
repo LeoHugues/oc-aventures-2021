@@ -71,6 +71,7 @@ default:
     'heading-small':  '@draggable/components/general/_heading_small.twig'
     'header-01':      '@draggable/components/headers/_header_01.twig'
     'image':          '@draggable/components/general/_image.twig'
+    'modal-image':    '@draggable/modal_image.twig'
     'embed':          '@draggable/components/general/_embed.twig'
     'video':          '@draggable/components/general/_video.twig'
     'layer':          '@draggable/components/design/_layer.twig'
@@ -91,13 +92,13 @@ default:
     'grid-04':        '@draggable/components/design/_grid_04.twig'
 
   grid:
-    classname: 'grid grid-cols-6 gap-4'
+    classname: 'flex flex-wrap'
     columns: 12
     patterns:
-      '4|4|4': 'col-span-2|col-span-2|col-span-2'
-      '4|8': 'col-span-2|col-span-4'
-      '6|6': 'col-span-3|col-span-3'
-      '8|4': 'col-span-4|col-span-2'
+      '4|4|4': 'md:w-1/3|md:w-1/3|md:w-1/3'
+      '4|8': 'md:w-1/3|md:w-2/3'
+      '6|6': 'md:w-1/2|md:w-1/2'
+      '8|4': 'md:w-2/3|md:w-1/3'
 
   text:
     classname: 'text-arx'
