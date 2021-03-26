@@ -42,7 +42,7 @@ homepage:
             label: "Section Tarifs"
             type: article
             localize: true
-            group: "Tarifs et Plan du parc"
+            group: "Tarifs et Info Pratique"
         section_contact:
             label: "Section Contact"
             type: article
