@@ -10,39 +10,39 @@ default:
   styles:      
       text:
         'lead':
-          title: '<span style="font-size: 1rem; color: #363636;font-family: Bitter; font-weight: 700;">STYLE IMPORTANT</span>'
-          classname: 'font-bold font-serif uppercase'
+          title: '<span style="font-size: 1rem; color: #363636;font-family: inhertit; font-weight: 700;">STYLE IMPORTANT</span>'
+          classname: 'font-bold uppercase'
         'normal-block':
-          title: '<span style="font-size: 1rem; color: #363636;font-family: Roboto, sans-serif;">Style Normal</span>'
-          classname: 'text-black text-base bg-white font-sans'
-        'pink-block':
-          title: '<span style="font-size: 1rem; background-color: #C23587;font-family: Roboto, sans-serif;color: #FFFFFF; padding: 4px; border-radius:3px;">Fond Rose</span>'
-          classname: 'text-white bg-pink text-base font-sans'
+          title: '<span style="font-size: 1rem; color: #363636;background-color: #EDDEAB;font-family: inhertit, sans-serif;">Style Normal</span>'
+          classname: 'text-sombre text-base bg-sable font-sans'
+        'red-block':
+          title: '<span style="font-size: 1rem; background-color: #87200C;font-family: inhertit, sans-serif;color: #EDDEAB; padding: 4px; border-radius:3px;">Fond Rose</span>'
+          classname: 'text-sable bg-rouge text-base font-sans'
         'blue-block':
-          title: '<span style="font-size: 1rem; background-color: #72A1E5;color: #FFFFFF;font-family: Roboto, sans-serif; padding: 4px; border-radius:3px;">Fond Bleu</span>'
-          classname: 'text-white bg-blue text-base font-sans'
+          title: '<span style="font-size: 1rem; background-color: #9ED8B0;color: #363636;font-family: inhertit, sans-serif; padding: 4px; border-radius:3px;">Fond Bleu</span>'
+          classname: 'text-sombre bg-vert-ciel text-base font-sans'
       
       heading:
         'h-normal-block':
-          title: '<span style="font-size: 1rem; color: #363636;font-family: Roboto, sans-serif;">Style Normal</span>'
-          classname: 'text-black text-base bg-white font-sans'
-        'h-pink-block':
-          title: '<span style="font-size: 1rem; background-color: #C23587;font-family: Roboto, sans-serif;color: #FFFFFF; padding: 4px; border-radius:3px;">Fond Rose</span>'
+          title: '<span style="font-size: 1rem; color: #363636;background-color: #EDDEAB;font-family: inhertit, sans-serif;">Style Normal</span>'
+          classname: 'text-sombre text-base bg-sable font-sans'
+        'h-red-block':
+          title: '<span style="font-size: 1rem; background-color: #87200C;font-family: inhertit, sans-serif;color: #EDDEAB; padding: 4px; border-radius:3px;">Fond Rose</span>'
           classname: 'text-white bg-pink text-base font-sans'
         'h-blue-block':
-          title: '<span style="font-size: 1rem; background-color: #72A1E5;color: #FFFFFF;font-family: Roboto, sans-serif; padding: 4px; border-radius:3px;">Fond Bleu</span>'
-          classname: 'text-white bg-blue text-base font-sans'
+          title: '<span style="font-size: 1rem; background-color: #9ED8B0;color: #363636;font-family: inhertit, sans-serif; padding: 4px; border-radius:3px;">Fond Bleu</span>'
+          classname: 'text-sombre bg-vert-ciel text-base font-sans'
       
       layer:
         'section-base':
-          title: '<span style="font-size: 1rem; background-color: #FFFFFF;font-family: Roboto, sans-serif;color: #363636; padding: 4px; border-radius:3px;">Section Style Normal</span>'
-          classname: 'section text-black bg-white text-base font-sans'
-        'section-pink':
-          title: '<span style="font-size: 1rem; background-color: #C23587;font-family: Roboto, sans-serif;color: #FFFFFF; padding: 4px; border-radius:3px;">Section Style Rose</span>'
-          classname: 'section text-white bg-pink text-base font-sans'
+          title: '<span style="font-size: 1rem; color: #363636;background-color: #EDDEAB;font-family: inhertit, sans-serif;">Style Normal</span>'
+          classname: 'text-sombre text-base bg-sable font-sans'
+        'section-red':
+          title: '<span style="font-size: 1rem; background-color: #87200C;font-family: inhertit, sans-serif;color: #EDDEAB; padding: 4px; border-radius:3px;">Fond Rose</span>'
+          classname: 'text-white bg-pink text-base font-sans'
         'section-blue':
-          title: '<span style="font-size: 1rem; background-color: #72A1E5;color: #FFFFFF;font-family: Roboto, sans-serif; padding: 4px; border-radius:3px;">Section Style Bleu</span>'
-          classname: 'section text-white bg-blue text-base font-sans'
+          title: '<span style="font-size: 1rem; background-color: #9ED8B0;color: #363636;font-family: inhertit, sans-serif; padding: 4px; border-radius:3px;">Fond Bleu</span>'
+          classname: 'text-sombre bg-vert-ciel text-base font-sans'
   
   icons:
     items: [ 😀, 😃, 😄, 😁, 😆, 😅, 😂, 🤣, 😊, 😇, 🙂, 🙃, 😉, 😌, 😍, 🥰, 😘, 😗, 😙, 😚, 😋, 😛, 😝, 😜, 🤪, 🤨, 🧐, 🤓, 😎, 🤩, 🥳, 😏, 😒, 😞, 😔, 😟, 😕, 🙁, 😣, 😖, 😫, 😩, 🥺, 😢, 😭, 😤, 😠, 😡, 🤬, 🤯, 😳, 🥵, 🥶, 😱, 😨, 😰, 😥, 😓, 🤗, 🤔, 🤭, 🤫, 🤥, 😶, 😐, 😑, 😬, 🙄, 😯, 😦, 😧, 😮, 😲, 🥱, 😴, 🤤, 😪, 😵, 🤐, 🥴, 🤢, 🤮, 🤧, 😷, 🤒, 🤕, 🤑, 🤠, 😈, 👿, 👹, 👺, 🤡, 💩, 👻, 💀, ☠️, 👽, 👾, 🤖, 🎃, 😺, 😸, 😹, 😻, 😼, 😽, 🙀, 😿, 😾,
@@ -62,16 +62,12 @@ default:
     js: 'assets/article/js/draggable-menu.js'
   
   draggable:
-    'card-01':        '@draggable/components/card/_card_01.twig'
-    'card-02':        '@draggable/components/card/_card_02.twig'
-    'paragraph':      '@draggable/components/general/_paragraph.twig'
     'text':           '<div class="text-arx">Lorem ipsum dolor si amet</div>'
     'heading-large':  '@draggable/components/general/_heading_large.twig'
     'heading-medium': '@draggable/components/general/_heading_medium.twig'
     'heading-small':  '@draggable/components/general/_heading_small.twig'
     'header-01':      '@draggable/components/headers/_header_01.twig'
     'image':          '@draggable/components/general/_image.twig'
-    'modal-image':    '@draggable/modal_image.twig'
     'embed':          '@draggable/components/general/_embed.twig'
     'video':          '@draggable/components/general/_video.twig'
     'layer':          '@draggable/components/design/_layer.twig'
@@ -79,17 +75,15 @@ default:
     'line':           '@draggable/components/general/_line.twig'
     'quote':          '@draggable/components/general/_quote.twig'
     'code':           '@draggable/components/general/_code.twig'
-    'hero-01':        '@draggable/components/heros/_hero_01.twig'
-    'features-01':    '@draggable/components/features/_features_01.twig'
-    'testimonial-01': '@draggable/components/testimonials/_testimonial_01.twig'
-    'pricing-01':     '@draggable/components/pricing/_pricing_01.twig'
-    'flex-03':        '@draggable/components/design/_flex_03.twig'
-    'flex-02':        '@draggable/components/design/_flex_02.twig'
-    'flex-04':        '@draggable/components/design/_flex_04.twig'
-    'grid-01':        '@draggable/components/design/_grid_01.twig'
-    'grid-02':        '@draggable/components/design/_grid_02.twig'
-    'grid-03':        '@draggable/components/design/_grid_03.twig'
-    'grid-04':        '@draggable/components/design/_grid_04.twig'
+    'page-01':        '@draggable/_page_01.twig'
+    'flex-01':        '@draggable/design/_flex_01.twig'
+    'flex-03':        '@draggable/design/_flex_03.twig'
+    'flex-02':        '@draggable/design/_flex_02.twig'
+    'flex-04':        '@draggable/design/_flex_04.twig'
+    'grid-01':        '@draggable/design/_grid_01.twig'
+    'grid-02':        '@draggable/design/_grid_02.twig'
+    'grid-03':        '@draggable/design/_grid_03.twig'
+    'grid-04':        '@draggable/design/_grid_04.twig'
 
   grid:
     classname: 'flex flex-wrap'
