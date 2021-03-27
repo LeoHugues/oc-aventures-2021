@@ -6,13 +6,10 @@
 
 <section class="bg-sable mt-10 w-full" data-scroll-section>
 
-  <div class="mb-4 md:mb-0 w-full mx-auto relative" style="height: 32em;">
-
-    <img src="{{ record|image }}" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
-
-  {% include 'partials/_record_divider_top.twig' %}
-
-  </div>
+  <section id="home" class="pt-24 mt-10 relative bg-center bg-cover bg-no-repeat" style="background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url({{record.image.url}})">
+      <img class="w-96 lg:w-1/3 mb-24 mt-16 mx-auto" style="border-radius: 1.5rem;" src="{{ asset('/theme/oc-aventures-2021/img/oc-logo-shadow.svg') }}">
+      {% include 'partials/_index_divider_top.twig' %}
+  </section>
   
   {{ record.body }}
 
