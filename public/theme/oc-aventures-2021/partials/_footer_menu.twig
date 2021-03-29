@@ -1,43 +1,69 @@
-<div class="w-full sm:w-60 p-4 relative">
-    <h2 class="text-sable font-semibold leading-tight text-center mb-3 uppercase">GENERAL</h2>
+<div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
     <nav class="list-none">
+        <h2 class="text-sable mb-3 text-sable font-semibold uppercase">HORAIRES DU PARC</h2>
+        <p class="text-lg leading-tight font-semibold">
+            AVRIL, MAI, JUIN, SEPTEMBRE, OCTOBRE
+        </p>
+        <p class="leading-tight ">
+            Week-end et jours fériés et vacances scolaires de L' ACADEMIE DE MONTPELLIER de 14 H à 19H00 (DERNIER DÉPART À 16H00)
+        </p>
+        <p class="text-lg font-semibold">
+            JUILLET, AOÛT
+        </p>
+        <p class="leading-tight ">
+            Tous les jours de 10h à 13h - 14h à 19h30 Départs le matin : entre 10h et 10h45 Départs l'après-midi : entre 14h et 16h30
+        </p>
+    </nav>
+</div>
+
+<div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="text-sable mb-3 text-sable font-semibold leading-tight uppercase">GÉNÉRAL</h2>
+        <nav class="list-none mb-10">
         <ul>
             {% for item in menu %}
                 {% if not item.submenu %}
                     <li><a class="hover:underline capitalize" href="{{ item.uri }}">{{ item.label|default(item.title) }}</a></li>
                 {% endif %}
-            {% endfor %}  
+            {% endfor %} 
+            <li>
+                {% include "partials/_search_widget.twig" %}
+            </li>
         </ul>
-    </nav>
-</div>
+        </nav>
+    </div>
 
-{% for item in menu %}
-    {% if item.submenu %}
-    <div class="w-full sm:w-60 p-4 relative">
-        <h2 class="text-sable font-semibold leading-tight text-center mb-3 uppercase">{{ item.label|default(item.title) }}</h2>
-        <nav class="list-none">
+    {% for item in menu %}
+        {% if item.submenu %}
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="text-sable mb-3 text-sable font-semibold leading-tight uppercase">{{ item.label|default(item.title) }}</h2>
+            <nav class="list-none mb-10">
+                <ul>
+                    {% for item in item.submenu %}
+                        <li><a class="hover:underline capitalize" href="{{ item.uri }}">{{ item.label|default(item.title) }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        {% endif %}
+    {% endfor %}  
+
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="text-sable mb-3 text-sable font-semibold uppercase">Contact</h2>
+        <nav class="list-none mb-10">
             <ul>
-                {% for item in item.submenu %}
-                    <li><a class="hover:underline capitalize" href="{{ item.uri }}">{{ item.label|default(item.title) }}</a></li>
-                {% endfor %}
+                <li>
+                    Lieu Dit Le Boulidou
+                </li>
+                <li>
+                    34270 St Jean de Cuculles
+                </li>
+                    <b> 06 19 89 53 86</b>
+                </li>
+                <li>
+                    <b>info@oc-aventures.com</b>
+                </li>
             </ul>
         </nav>
     </div>
-    {% endif %}
-{% endfor %}  
-
-<div class="w-full sm:w-60 p-4 relative">
-    <h2 class="text-sable font-semibold leading-tight text-center mb-3 uppercase">INFO</h2>
-    <nav class="list-none">
-        <p>
-            Lieu Dit Le Boulidou
-            <br>
-            34270 St Jean de Cuculles
-            <br>
-            <b> 06 19 89 53 86</b>
-            <br>
-            <b> info@oc-aventures.com</b>
-        </p>
-        {% include "partials/_search_widget.twig" %}
-    </nav>
 </div>
