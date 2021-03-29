@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="{{ asset('css/locomotive-scroll.min.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/base-2021.css') }}" />
+  <link rel="stylesheet" href="{{ asset('js/css/tarteaucitron.css') }}" />
   <!--Replace with your tailwind.css once created-->
 
   <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
@@ -62,7 +63,44 @@
   <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
   <script defer src="{{ asset('js/locomotive-scroll.min.js') }}"></script>
   <script defer src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+  <script defer src="{{ asset('js/brands.min.js') }}"></script>
+  <script defer src="{{ asset('js/fontawesome.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/tarteaucitron.js') }}"></script>
 
+  <script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+    
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+    
+        "orientation": "bottom", /* Banner position (top - bottom) */
+    
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+        
+        "showIcon": true, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* Position of the icon between BottomRight, BottomLeft, TopRight and TopLeft */
+    
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+    
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+    
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+    
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": true, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+    
+        //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for subdomain website */
+    
+        "readmoreLink": "", /* Change the default readmore link pointing to tarteaucitron.io */
+        
+        "mandatory": true /* Show a message about mandatory cookies */
+    });
+  </script> 
 <script type="text/javascript">
   $(document).ready(function() {
     $('.popup-image > img').magnificPopup({
@@ -120,6 +158,7 @@
 
     })();
   </script>
+  
 
   {% block script %}
   {% endblock %}

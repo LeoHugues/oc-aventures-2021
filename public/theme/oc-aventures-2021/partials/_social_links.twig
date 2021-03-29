@@ -1,0 +1,26 @@
+<a
+    href="https://www.facebook.com/sharer/sharer.php?u={{ canonical() }}&t={{ record.title }}" 
+    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" 
+    target="_blank" 
+    title="Share on Facebook"
+    >
+    <span class="icon is-large text-pink hover:text-pink-400 mx-1">
+        <i class="fa-3x fab fa-facebook-square"></i>
+    </span>
+</a>
+<a href="https://twitter.com/share?url={{ canonical() }}&text={{ record.title }}" 
+    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" 
+    target="_blank" 
+    title="Share on Twitter">
+    <span class="icon is-large text-pink hover:text-pink-400  mx-1">
+        <i class="fa-3x fab fa-twitter-square"></i>
+    </span>
+</a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ canonical() }}&t=={{ record.title }}" 
+    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" 
+    target="_blank" 
+    title="Share on Linkedin">
+    <span class="icon is-large text-pink hover:text-pink-400  mx-1">
+        <i class="fa-3x fab fa-linkedin"></i>
+    </span>
+</a>
