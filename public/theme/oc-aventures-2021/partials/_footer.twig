@@ -1,29 +1,6 @@
 <!--Footer-->
 <div data-scroll-section>
-	<footer class="bg-rouge-600 text-rouge-400 body-font border-b pt-5">
-	<div class="absolute top-0 w-full origin-top transform translate-y-1 rotate-180">
-      <img class="w-full h-16" src="{{ asset('img/footer-divider-bottom.svg')}}"/>
-    </div>
-		<div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-  				{{ menu('main', template='partials/_footer_menu.twig') }}
-		</div>
+{% setcontent footer = 'block/13' %}
 
-		<div class="bg-rouge text-sable">
-			<div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-				<div class="relative font-bold text-lg2 xl:text-2xl tracking-tight uppercase rounded-lg2 focus:outline-none focus:shadow-outline">
-					{% include 'img/logo.svg' %}
-					{{ config.get('general/sitename') }}
-					<label class="absolute bottom-0 text-sm tracking-wide	transform -translate-x-16">0619895386</label>
-				</div>
-
-				<p class="text-sm sm:ml-6 sm:mt-0 mt-4">© {{ "now"|date('Y') }} —
-					<a href="https://boltcms.io" rel="noopener noreferrer" class="ml-1" target="_blank">Built with Bolt</a>
-				</p>
-
-				<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-					{% include 'partials/_social_links.twig' %}
-				</span>
-			</div>
-		</div>
-	</footer>
+{{ footer.content }}
 </div>
