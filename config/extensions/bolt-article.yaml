@@ -56,35 +56,6 @@ default:
     ]
     width: 200
 
-  draggable_menu: 
-    template: '@draggable/_draggable_menu.twig'
-    css: 'assets/article/css/draggable-menu-default.css'
-    js: 'assets/article/js/draggable-menu.js'
-  
-  draggable:
-    'text':           '<div class="text-arx">Lorem ipsum dolor si amet</div>'
-    'heading-large':  '@draggable/components/general/_heading_large.twig'
-    'heading-medium': '@draggable/components/general/_heading_medium.twig'
-    'heading-small':  '@draggable/components/general/_heading_small.twig'
-    'header-01':      '@draggable/components/headers/_header_01.twig'
-    'image':          '@draggable/components/general/_image.twig'
-    'embed':          '@draggable/components/general/_embed.twig'
-    'video':          '@draggable/components/general/_video.twig'
-    'layer':          '@draggable/components/design/_layer.twig'
-    'container':      '@draggable/components/design/_container.twig'
-    'line':           '@draggable/components/general/_line.twig'
-    'quote':          '@draggable/components/general/_quote.twig'
-    'code':           '@draggable/components/general/_code.twig'
-    'page-01':        '@draggable/_page_01.twig'
-    'flex-01':        '@draggable/design/_flex_01.twig'
-    'flex-03':        '@draggable/design/_flex_03.twig'
-    'flex-02':        '@draggable/design/_flex_02.twig'
-    'flex-04':        '@draggable/design/_flex_04.twig'
-    'grid-01':        '@draggable/design/_grid_01.twig'
-    'grid-02':        '@draggable/design/_grid_02.twig'
-    'grid-03':        '@draggable/design/_grid_03.twig'
-    'grid-04':        '@draggable/design/_grid_04.twig'
-
   grid:
     classname: 'flex flex-wrap'
     columns: 12
