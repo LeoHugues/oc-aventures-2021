@@ -10,21 +10,10 @@ main:
         - link: entry/11
         - link: entry/10
         - link: entry/8
-        - link: entry/7
   - link: page/12
-  - label: groupes
-    submenu:
-        - link: entry/2
-        - link: entry/3
-        - link: entry/4
-        - link: entry/5
-        - link: entry/6
   - label: tarifs
     link: '#tarifs'
     class: data-scroll-to
   - label: contact horaires
     link: '#contact'
     class: data-scroll-to
-
-
-foo: bar

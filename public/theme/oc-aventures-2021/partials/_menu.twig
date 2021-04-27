@@ -36,7 +36,7 @@
             href="{{ item.link }}"
             {{ item.class }}
         {% else %}
-            href="{{ path('homepage') }}{{ item.link }}"
+            href="{{ path('homepage_locale') }}{{ item.link }}"
         {% endif %}
     {% else %}
         href="{{ item.uri }}"
@@ -49,12 +49,21 @@
 <nav :class="{'flex': open, 'hidden': !open}"
      class="z-30 top-0 currentColor flex-col flex-grow hidden lg2:flex lg2:justify-end lg2:flex-row">
     {% for item in menu %}
-
         {% if not item.submenu %}
             {{ _self.display_main(item) }}
         {% else %}
             {{ _self.display_submenu(item) }}
         {% endif %}
-
     {% endfor %}
+    <div class="flex flex-wrap px-2 xl:px-4 py-4">
+      <a href="{{ path('homepage') }}fr" class="px-2 my-auto">
+        <img class="w-6 h-6 transform hover:scale-150 duration-300" src="{{ asset('img/france.png')}}"/>
+      </a>
+      <a href="{{ path('homepage') }}en" class="px-2 my-auto">
+        <img class="w-6 h-6 transform hover:scale-150 duration-300" src="{{ asset('img/royaume-uni.png')}}"/>
+      </a>
+      <a href="{{ path('homepage') }}de" class="px-2 my-auto">
+        <img class="w-6 h-6 transform hover:scale-150 duration-300" src="{{ asset('img/allemagne.png')}}"/>
+      </a>
+    </div>
 </nav>
