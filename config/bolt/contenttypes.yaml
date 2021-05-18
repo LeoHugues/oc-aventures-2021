@@ -70,6 +70,9 @@ homepage:
             type: slug
             uses: title
             group: Meta
+        seo:
+            type: seo
+            group: "Paramètre SEO"
     viewless: false
     taxonomy: [ categories, tags, foobars ]
     locales: ['fr', 'en', 'de']
@@ -117,6 +120,9 @@ pages:
         template:
             type: templateselect
             filter: '/^[^_].*\.twig$/'
+        seo:
+            type: seo
+            group: "Paramètre SEO"
     locales: ['fr', 'en', 'de']
     records_per_page: 5
     order: id
